@@ -1,5 +1,6 @@
 {
     "trailingComma": "none",
     "semi": false,
-    "singleQuote": true
+    "singleQuote": true,
+    "prettier/prettier": ["error", {"singleQuote": true, "parser": "flow"}]
 }

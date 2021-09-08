@@ -9,6 +9,8 @@ function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>React Boilerplate</title>
         <link rel="shortcut icon" href="" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#06092B" />
         <link rel="apple-touch-icon" href="/img/icon-512.png" />
         <meta
           name="description"

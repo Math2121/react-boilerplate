@@ -4,7 +4,16 @@ import Main from '.'
 
 describe('Main component', () => {
   it('should render the heading', () => {
-    render(<Main />)
-    expect(screen.getByRole('heading', { name: /react/i })).toBeInTheDocument()
+    const { container } = render(<Main />)
+    expect(
+      screen.getByRole('heading', { name: /react avançado/i })
+    ).toBeInTheDocument()
+
+    expect(container.firstChild).toMatchSnapshot()
+  })
+  it('should render the colors corectly', () => {
+    const { container } = render(<Main />)
+
+    expect(container.firstChild).toHaveStyle({ 'background-color': '#06092b' })
   })
 })
